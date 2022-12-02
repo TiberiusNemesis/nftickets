@@ -1,0 +1,64 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_height_": {
+        "type": "string",
+        "value": "16%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "sed5e50b3d86430cad625ab38a093011",
+    "_text_": "ENTRAR",
+    "_top_": {
+        "type": "string",
+        "value": "130dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "92%"
+    },
+    "android": {
+        "height": {
+            "type": "string",
+            "value": "40dp"
+        }
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s4f97e945ba24926b27f0e3b87f4803d",
+    "id": "btnSubmit",
+    "ide_onClick": "AS_Button_b404e84edf1f4c2f8547f5ad683ba0f5",
+    "info": null,
+    "iphone": {
+        "height": {
+            "type": "string",
+            "value": "40dp"
+        }
+    },
+    "iscustomlayout": false,
+    "isvisible": true,
+    "kuid": "f3fc178970aa4f03b6cb2610dd40ce9d",
+    "name": "kony.ui.Button",
+    "parent": "flxLoginCredsWrapper",
+    "pf": "frmLogin",
+    "retaincontentalignment": false,
+    "retainflexpositionproperties": false,
+    "wType": "Button",
+    "zindex": 1
+}

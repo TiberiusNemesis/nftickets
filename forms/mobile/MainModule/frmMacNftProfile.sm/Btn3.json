@@ -1,0 +1,48 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "50%"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s7c488a7c76946f58daa7bab1bf39e8f",
+    "_text_": "",
+    "_top_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "25%"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": false,
+    "focusskin": "sc3cf00819f540ce977d237b75010508",
+    "id": "Btn3",
+    "info": null,
+    "isvisible": true,
+    "kuid": "ab79556d317d449ab145e2d86395609a",
+    "name": "kony.ui.Button",
+    "parent": "footerFourButtons",
+    "pf": "frmMacNftProfile",
+    "wType": "Button",
+    "zindex": 1
+}

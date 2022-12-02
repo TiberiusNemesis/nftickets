@@ -1,0 +1,34 @@
+{
+  "type" : "lob",
+  "custom" : false,
+  "junction" : false,
+  "customizable" : false,
+  "verbs" : {
+    "get" : "getMapping",
+    "create" : "createMapping",
+    "update" : "updateMapping",
+    "delete" : "deleteMapping"
+  },
+  "entityProperties" : {
+    "BatchMode" : "pagination",
+    "backendMeta" : {
+      "backendObjectName" : "artists",
+      "qualifiedName" : "sql10539429.artists",
+      "metadataformatterobject" : "{\"name\":\"artists\",\"displayName\":\"artists\",\"qualifiedName\":\"sql10539429.artists\",\"schemaName\":\"sql10539429\",\"tableName\":\"artists\",\"entityType\":\"com.kony.rdbms.metadata.model.AnnotatedTable\"}"
+    },
+    "designTimeBackendMeta" : { }
+  },
+  "commonMappings" : [ {
+    "sourceFieldName" : "artistId",
+    "targetField" : "artistId",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "artistName",
+    "targetField" : "artistName",
+    "type" : "request_response"
+  }, {
+    "sourceFieldName" : "primaryGenre",
+    "targetField" : "primaryGenre",
+    "type" : "request_response"
+  } ]
+}

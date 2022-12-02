@@ -1,0 +1,84 @@
+{
+  "operationConfig" : {
+    "name" : "getAlbumsFromArtist9079",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"artistId\" outputpath=\"id\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"responseList\" outputpath=\"Album\">\n            <set-param inputpath=\"albumId\" outputpath=\"albumId\"/>\n            <set-param inputpath=\"albumName\" outputpath=\"artistId\"/>\n            <set-param inputpath=\"albumPrice\" outputpath=\"albumName\"/>\n            <set-param inputpath=\"artistId\" outputpath=\"albumPrice\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"Album\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"MockApiTrainingService (1.0).getAlbumsFromArtist\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:Album:artistId:\",\"to\":\"target:id:\",\"fromPort\":\"source:Album:artistId:\",\"toPort\":\"target:id:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Album\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"MockApiTrainingService (1.0).getAlbumsFromArtist\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:responseList:albumId:\",\"to\":\"target:Album:albumId:\",\"fromPort\":\"source:responseList:albumId:\",\"toPort\":\"target:Album:albumId:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:responseList:albumName:\",\"to\":\"target:Album:artistId:\",\"fromPort\":\"source:responseList:albumName:\",\"toPort\":\"target:Album:artistId:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:responseList:albumPrice:\",\"to\":\"target:Album:albumName:\",\"fromPort\":\"source:responseList:albumPrice:\",\"toPort\":\"target:Album:albumName:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:responseList:artistId:\",\"to\":\"target:Album:albumPrice:\",\"fromPort\":\"source:responseList:artistId:\",\"toPort\":\"target:Album:albumPrice:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "MockApiTrainingService",
+      "serviceVersion" : "1.0",
+      "operationName" : "getAlbumsFromArtist"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ ],
+        "name" : "Artist",
+        "actions" : {
+          "get" : false
+        },
+        "selected" : false,
+        "actionsAllSelected" : false,
+        "actionsPartiallySelected" : false
+      } ],
+      "name" : "Album",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

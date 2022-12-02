@@ -1,0 +1,7 @@
+{
+  "serviceType" : "integration",
+  "jars" : [ {
+    "name" : "AppTiberius-v1.jar",
+    "type" : "servicejar"
+  } ]
+}

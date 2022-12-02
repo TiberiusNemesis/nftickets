@@ -1,0 +1,49 @@
+{
+  "operationConfig" : {
+    "name" : "updateArtist6994",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"artistName\" outputpath=\"artistName\"/>\n        <set-param inputpath=\"artistPrimaryGenre\" outputpath=\"primaryGenre\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"\" outputpath=\"Artist\">\n            <set-param inputpath=\"artistId\" outputpath=\"artistId\"/>\n            <set-param inputpath=\"artistName\" outputpath=\"artistName\"/>\n            <set-param inputpath=\"primaryGenre\" outputpath=\"artistPrimaryGenre\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"Artist\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"MockApiTrainingService (1.0).updateArtist\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:Artist:artistName:\",\"to\":\"target:artistName:\",\"fromPort\":\"source:Artist:artistName:\",\"toPort\":\"target:artistName:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:Artist:artistPrimaryGenre:\",\"to\":\"target:primaryGenre:\",\"fromPort\":\"source:Artist:artistPrimaryGenre:\",\"toPort\":\"target:primaryGenre:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Artist\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"MockApiTrainingService (1.0).updateArtist\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:artistId:\",\"to\":\"target:Artist:artistId:\",\"fromPort\":\"source:artistId:\",\"toPort\":\"target:Artist:artistId:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:artistName:\",\"to\":\"target:Artist:artistName:\",\"fromPort\":\"source:artistName:\",\"toPort\":\"target:Artist:artistName:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:primaryGenre:\",\"to\":\"target:Artist:artistPrimaryGenre:\",\"fromPort\":\"source:primaryGenre:\",\"toPort\":\"target:Artist:artistPrimaryGenre:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "MockApiTrainingService",
+      "serviceVersion" : "1.0",
+      "operationName" : "updateArtist"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ ],
+        "name" : "Album",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false,
+          "delete" : false
+        },
+        "selected" : false,
+        "actionsAllSelected" : false,
+        "actionsPartiallySelected" : false
+      } ],
+      "name" : "Artist",
+      "actions" : {
+        "create" : true,
+        "update" : true,
+        "partialupdate" : true,
+        "delete" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

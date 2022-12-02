@@ -1,0 +1,12 @@
+{
+  "assets" : [ {
+    "name" : "SampleDataForLists.zip",
+    "type" : "sampleData"
+  } ],
+  "config" : {
+    "metadataSecurity" : "public",
+    "offline" : false,
+    "uploadCache" : false,
+    "conflict_policy" : "none"
+  }
+}

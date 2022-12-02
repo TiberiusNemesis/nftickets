@@ -1,0 +1,13 @@
+[ {
+  "sourceObject" : "Artist",
+  "targetObject" : "Album",
+  "relationshipKeys" : [ {
+    "sourceField" : "artistId",
+    "targetField" : "artistId",
+    "etag" : "fce22697-80cf-481a-a885-f04030928770"
+  } ],
+  "name" : "Artist_Album",
+  "type" : "OneToMany",
+  "custom" : false,
+  "cascadeDelete" : true
+} ]

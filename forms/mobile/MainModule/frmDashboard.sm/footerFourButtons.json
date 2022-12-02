@@ -1,0 +1,77 @@
+{
+    "DNDConfig": null,
+    "_bottom_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_height_": {
+        "type": "string",
+        "value": "49dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_margin_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_orientation_": 6,
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_percent_": true,
+    "_right_": {
+        "type": "string",
+        "value": "0dp"
+    },
+    "_skin_": "sdc99ec5f9c2488ab14c0efbf299b92e",
+    "allboxes": [],
+    "android": {
+        "height": {
+            "type": "string",
+            "value": "56dp"
+        }
+    },
+    "canUpdateUI": true,
+    "children": [
+        "Img1",
+        "Img2",
+        "Img3",
+        "Img4",
+        "Btn1",
+        "Btn2",
+        "Btn3",
+        "Btn4"
+    ],
+    "clipbounds": true,
+    "containerweight": 100,
+    "enablescrolling": true,
+    "id": "footerFourButtons",
+    "info": null,
+    "iphone": {},
+    "isvisible": true,
+    "kuid": "fd79704a6f654a62a3de022e82901fe7",
+    "layouttype": 2,
+    "name": "kony.ui.FlexContainer",
+    "parent": "frmDashboard",
+    "pf": "frmDashboard",
+    "snapgridsize": 10,
+    "snaptogrid": true,
+    "tabrcandroid": {
+        "height": {
+            "type": "string",
+            "value": "56dp"
+        }
+    },
+    "vizProps": {
+        "hidewidgethierarchy": false
+    },
+    "wType": "FlexContainer",
+    "widgetalignment": 1
+}

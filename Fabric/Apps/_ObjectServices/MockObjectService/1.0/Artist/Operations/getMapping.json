@@ -1,0 +1,84 @@
+{
+  "operationConfig" : {
+    "name" : "getArtistById9577",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "odata" : [ {
+      "id" : "$select",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$filter",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$orderby",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$top",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$skip",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$expand",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchsize",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    }, {
+      "id" : "$batchid",
+      "dataType" : "string",
+      "encode" : true,
+      "accessType" : "readonly"
+    } ],
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"artistId\" outputpath=\"id\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"\" outputpath=\"Artist\">\n            <set-param inputpath=\"artistId\" outputpath=\"artistId\"/>\n            <set-param inputpath=\"artistName\" outputpath=\"artistName\"/>\n            <set-param inputpath=\"primaryGenreName\" outputpath=\"artistPrimaryGenre\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"Artist\",\"xy\":\"393.8095238095238 74.28571428571428\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"MockApiTrainingService (1.0).getArtistById\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:Artist:artistId:\",\"to\":\"target:id:\",\"fromPort\":\"source:Artist:artistId:\",\"toPort\":\"target:id:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Artist\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"MockApiTrainingService (1.0).getArtistById\",\"xy\":\"164 105\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:artistId:\",\"to\":\"target:Artist:artistId:\",\"fromPort\":\"source:artistId:\",\"toPort\":\"target:Artist:artistId:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:artistName:\",\"to\":\"target:Artist:artistName:\",\"fromPort\":\"source:artistName:\",\"toPort\":\"target:Artist:artistName:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:primaryGenreName:\",\"to\":\"target:Artist:artistPrimaryGenre:\",\"fromPort\":\"source:primaryGenreName:\",\"toPort\":\"target:Artist:artistPrimaryGenre:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "MockApiTrainingService",
+      "serviceVersion" : "1.0",
+      "operationName" : "getArtistById"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "actionsAllSelected" : false,
+        "children" : [ ],
+        "name" : "Album",
+        "actions" : {
+          "get" : false
+        },
+        "actionsPartiallySelected" : false,
+        "selected" : false
+      } ],
+      "name" : "Artist",
+      "actions" : {
+        "get" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}

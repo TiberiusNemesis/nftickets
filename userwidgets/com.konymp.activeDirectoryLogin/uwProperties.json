@@ -1,0 +1,295 @@
+{
+    "classname": "activeDirectoryLogin",
+    "definitions": {
+        "apis": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "ae84488ccb5048d8808866f42ebc7f55",
+                    "paramList": [],
+                    "propertyKey": "getUsername",
+                    "pw": {
+                        "displayName": "getUsername",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h8a7fd77c21b40358e8332e65b5b33ff",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "events": {
+            "custom": [
+                {
+                    "group": "General",
+                    "kuid": "dfd1423247a64f6f87db50d670d44240",
+                    "paramList": [
+                        {
+                            "name": "errorResponse"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onErrorCallback",
+                    "pw": {
+                        "displayName": "onErrorCallback",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h8a7fd77c21b40358e8332e65b5b33ff",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "d258682e6b4e459cbdd33c468d6d6034",
+                    "paramList": [
+                        {
+                            "name": "successResponse"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onLoginSuccess",
+                    "pw": {
+                        "displayName": "onLoginSuccess",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h8a7fd77c21b40358e8332e65b5b33ff",
+                    "type": "event"
+                },
+                {
+                    "group": "General",
+                    "kuid": "ddb499c0dc244517892c0e779c3dcc15",
+                    "paramList": [
+                        {
+                            "name": "errorResponse"
+                        }
+                    ],
+                    "propertyIndex": 1,
+                    "propertyKey": "onLoginFailed",
+                    "pw": {
+                        "displayName": "onLoginFailed",
+                        "uiRepresentation": "Label-Label-Button-Button"
+                    },
+                    "srcWgtKUID": "h8a7fd77c21b40358e8332e65b5b33ff",
+                    "type": "event"
+                }
+            ],
+            "passthrough": []
+        },
+        "groups": {
+            "apis": [
+                "General"
+            ],
+            "events": [],
+            "properties": [],
+            "widgets": []
+        },
+        "properties": {
+            "custom": [],
+            "passthrough": [
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "d25d7c5f18eb4f5798d081f765ba5eda",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 2,
+                    "propertyKey": "submitButtonSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Submit Button Skin",
+                        "srcWidget": "btnSubmit",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "d94ecb5d01f241f19cc571b4f303a102"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "f057cc57955949068fcaf01094cbac41",
+                    "originalPropertyKey": "src",
+                    "propertyIndex": 3,
+                    "propertyKey": "logoImage",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Logo",
+                        "srcWidget": "imgLogo",
+                        "type": "string",
+                        "uiConfig": {
+                            "Button": {
+                                "dataRetrieverId": "Imagelist",
+                                "dataUpdaterId": "Imagelist",
+                                "popupId": "Imagelist",
+                                "type": "ImageEditBtn"
+                            },
+                            "Label": {}
+                        },
+                        "uiRepresentation": "Label-Label-Button",
+                        "wType": "Image"
+                    },
+                    "srcWgtKUID": "e538508db8014a469947c2a2e6a5fe7b"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "j0fa8536bc46478db5908aa673230b25",
+                    "originalPropertyKey": "placeholder",
+                    "propertyIndex": 4,
+                    "propertyKey": "placeholder",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Username Placeholder",
+                        "srcWidget": "txtUserName",
+                        "supportedPlatforms": {
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "c5bd4b15fcf14ac9b32223696378f775"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "hc835129f6be41728335f8102c6c5e2f",
+                    "originalPropertyKey": "placeholder",
+                    "propertyIndex": 5,
+                    "propertyKey": "placeholder1",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "widget",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Password Placeholder",
+                        "srcWidget": "txtPassword",
+                        "supportedPlatforms": {
+                            "mobile": [
+                                "iphone",
+                                "android",
+                                "winphone8",
+                                "spa"
+                            ],
+                            "tablet": [
+                                "ipad",
+                                "android",
+                                "windows8",
+                                "spa"
+                            ]
+                        },
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "fb7ad709ae954903b6a6d54a0dc30894"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a1cf7bcf8f6f4d8b99dbbbc615ef5229",
+                    "originalPropertyKey": "text",
+                    "propertyIndex": 6,
+                    "propertyKey": "submitButtonText",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "look",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Submit Button Text",
+                        "srcWidget": "btnSubmit",
+                        "type": "string",
+                        "uiRepresentation": "Label-Textbox",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "d94ecb5d01f241f19cc571b4f303a102"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "a06076cce19d42bb8b2d37a6e46cd3b5",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 8,
+                    "propertyKey": "lineSeperatorSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "LineSeperator Skin",
+                        "srcWidget": "lblLine",
+                        "wType": "Label"
+                    },
+                    "srcWgtKUID": "ff8bd50d1c674fd3a506bf2f15a37887"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "bec72d41a8e148a6b81e5c1260229f26",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 9,
+                    "propertyKey": "txtUserNameSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "txtUserName Skin",
+                        "srcWidget": "txtUserName",
+                        "wType": "TextField"
+                    },
+                    "srcWgtKUID": "c5bd4b15fcf14ac9b32223696378f775"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "e200950ef8bb45f2b7978dfef53c2256",
+                    "originalPropertyKey": "focusSkin",
+                    "propertyIndex": 11,
+                    "propertyKey": "submitButtonFocusSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "SubmitButton Focus Skin",
+                        "srcWidget": "btnSubmit",
+                        "wType": "Button"
+                    },
+                    "srcWgtKUID": "d94ecb5d01f241f19cc571b4f303a102"
+                },
+                {
+                    "access": "Enable",
+                    "group": "General",
+                    "kuid": "i37e34d12dea4630bf30208508e5b523",
+                    "originalPropertyKey": "skin",
+                    "propertyIndex": 12,
+                    "propertyKey": "loginBackgroundSkin",
+                    "pw": {
+                        "access": "readwrite",
+                        "category": "skin",
+                        "dependentKeysKUIDs": null,
+                        "displayName": "Login Background",
+                        "srcWidget": "flxBackground",
+                        "wType": "FlexContainer"
+                    },
+                    "srcWgtKUID": "dfdd5f9c5c2e4dc5a6195a60f650c70b"
+                }
+            ]
+        },
+        "widgets": {
+            "expose": [],
+            "passthrough": []
+        }
+    },
+    "namespace": "com.konymp",
+    "version": "1.0.0"
+}

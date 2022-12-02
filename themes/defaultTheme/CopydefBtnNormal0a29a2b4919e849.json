@@ -1,0 +1,19 @@
+{
+  "android": {
+    "font_name": "Poppins-Bold"
+  },
+  "background_color": "d41929ff",
+  "bg_type": "one",
+  "border_color": "ffffffff",
+  "border_style": "plain",
+  "border_type": 0,
+  "border_width": 0,
+  "font_color": "ffffffff",
+  "font_name": "iphoneSystem",
+  "font_size": 150,
+  "font_style": "normal",
+  "font_weight": "400",
+  "isDefaultSkin": false,
+  "kuid": "sed6b3ec29c54ebdb89930453dc61640",
+  "wType": "Button"
+}

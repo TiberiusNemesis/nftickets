@@ -1,0 +1,45 @@
+{
+  "subType" : "customapp",
+  "description" : "AppTiberius",
+  "version" : "1.0",
+  "intSvcs" : [ {
+    "name" : "FMSHTestDb",
+    "version" : "1.0",
+    "etag" : "7c3dcdd5-c923-4d2d-b516-3ce2aeee61d2"
+  }, {
+    "name" : "iTunesApiService",
+    "version" : "1.0",
+    "etag" : "263e329d-ea66-44d7-8bcb-6eb67cfc2437"
+  }, {
+    "name" : "MockApiTrainingService",
+    "version" : "1.0",
+    "etag" : "90753235-c04a-4010-b587-5531f27d5d2d"
+  }, {
+    "name" : "NemesisIdService",
+    "version" : "1.0",
+    "etag" : "3064941b-15c8-4382-89c0-1f8fbd976a21"
+  }, {
+    "name" : "SerpApiService",
+    "version" : "1.0",
+    "etag" : "36e1eb6f-3b39-45ba-96bb-72ae1113090f"
+  }, {
+    "name" : "TestDatabaseService",
+    "version" : "1.0",
+    "etag" : "049ad9f4-3c7c-49a7-9cc7-0b41d4e41343"
+  } ],
+  "objectSvcs" : [ {
+    "name" : "MockObjectService",
+    "version" : "1.0",
+    "etag" : "3e29ce23-757c-4497-a445-1a23501785fd"
+  }, {
+    "name" : "MySQLObjectService",
+    "version" : "1.0",
+    "etag" : "750b9170-e571-43df-acf6-39c8b6bd3ea9"
+  }, {
+    "name" : "SampleDataForLists",
+    "version" : "1.0",
+    "etag" : "ff648887-5279-46b7-841e-6d448876a948"
+  } ],
+  "identity" : [ "NemesisId" ],
+  "identitySvcConf" : "{\"session_idle_timeout_mins\":20,\"session_max_duration_mins\":360,\"show_security_attributes\":false,\"is_integrity_enabled\":false,\"auto_extend\":true}"
+}

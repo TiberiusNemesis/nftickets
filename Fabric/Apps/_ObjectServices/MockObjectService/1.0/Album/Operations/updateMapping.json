@@ -1,0 +1,49 @@
+{
+  "operationConfig" : {
+    "name" : "updateArtistAlbum8676",
+    "type" : "MappedToBackend",
+    "cachable" : false,
+    "smsEnabled" : false,
+    "security" : "authorized_app_user",
+    "responseEncoding" : "UTF-8",
+    "httpMethod" : "GET",
+    "decodeResponseBody" : false,
+    "iMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"request_in\" outputpath=\"request_out\">\n        <set-param inputpath=\"albumId\" outputpath=\"albumId\"/>\n        <set-param inputpath=\"albumName\" outputpath=\"albumName\"/>\n        <set-param inputpath=\"albumPrice\" outputpath=\"albumPrice\"/>\n        <set-param inputpath=\"artistId\" outputpath=\"artistId\"/>\n    </map>\n</mapper>\n",
+    "oMapping" : "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<mapper xmlns=\"http://www.kony.com/ns/mapper\">\n    <map inputpath=\"response_in\" outputpath=\"response_out\">\n        <map inputpath=\"\" outputpath=\"Album\">\n            <set-param inputpath=\"albumId\" outputpath=\"albumId\"/>\n            <set-param inputpath=\"artistId\" outputpath=\"artistId\"/>\n            <set-param inputpath=\"albumName\" outputpath=\"albumName\"/>\n            <set-param inputpath=\"albumPrice\" outputpath=\"albumPrice\"/>\n        </map>\n    </map>\n</mapper>\n",
+    "iVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"request_in\",\"text\":\"Album\",\"xy\":\"150 100\"},{\"isGroup\":true,\"key\":\"request_out\",\"text\":\"MockApiTrainingService (1.0).updateArtistAlbum\",\"xy\":\"770 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:Album:albumName:\",\"to\":\"target:albumName:\",\"fromPort\":\"source:Album:albumName:\",\"toPort\":\"target:albumName:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:Album:albumPrice:\",\"to\":\"target:albumPrice:\",\"fromPort\":\"source:Album:albumPrice:\",\"toPort\":\"target:albumPrice:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:Album:artistId:\",\"to\":\"target:artistId:\",\"fromPort\":\"source:Album:artistId:\",\"toPort\":\"target:artistId:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:Album:albumId:\",\"to\":\"target:albumId:\",\"fromPort\":\"source:Album:albumId:\",\"toPort\":\"target:albumId:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "oVisualMappingData" : "{\"nodeDataArray\":[{\"isGroup\":true,\"key\":\"response_out\",\"text\":\"Album\",\"xy\":\"770 100\"},{\"isGroup\":true,\"key\":\"response_in\",\"text\":\"MockApiTrainingService (1.0).updateArtistAlbum\",\"xy\":\"150 100\"}],\"linkDataArray\":[{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:albumId:\",\"to\":\"target:Album:albumId:\",\"fromPort\":\"source:albumId:\",\"toPort\":\"target:Album:albumId:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:albumName:\",\"to\":\"target:Album:albumName:\",\"fromPort\":\"source:albumName:\",\"toPort\":\"target:Album:albumName:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:albumPrice:\",\"to\":\"target:Album:albumPrice:\",\"fromPort\":\"source:albumPrice:\",\"toPort\":\"target:Album:albumPrice:\"},{\"category\":\"Mapping\",\"visible\":true,\"from\":\"source:artistId:\",\"to\":\"target:Album:artistId:\",\"fromPort\":\"source:artistId:\",\"toPort\":\"target:Album:artistId:\"}],\"blockCount\":{\"variableCount\":0},\"variableMap\":{},\"xmlMappingOverride\":false}",
+    "applyCommonMapping" : false,
+    "applyRequestCommonMapping" : false,
+    "applyResponseCommonMapping" : false,
+    "backendMeta" : {
+      "serviceName" : "MockApiTrainingService",
+      "serviceVersion" : "1.0",
+      "operationName" : "updateArtistAlbum"
+    },
+    "relationshipHierarchyMapping" : {
+      "children" : [ {
+        "children" : [ ],
+        "name" : "Artist",
+        "actions" : {
+          "create" : false,
+          "update" : false,
+          "partialupdate" : false,
+          "delete" : false
+        },
+        "selected" : false,
+        "actionsAllSelected" : false,
+        "actionsPartiallySelected" : false
+      } ],
+      "name" : "Album",
+      "actions" : {
+        "create" : true,
+        "update" : true,
+        "partialupdate" : true,
+        "delete" : true
+      },
+      "selected" : true
+    },
+    "requestXmlMappingOverride" : false,
+    "responseXmlMappingOverride" : false
+  }
+}
